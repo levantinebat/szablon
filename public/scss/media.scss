@@ -1,0 +1,706 @@
+
+
+@media only screen and (max-width:1400px){
+html {
+  $font-size:17.5px;
+  body{
+    font-size:$font-size;
+  }
+  .sidebar-menu{
+    margin-right: 200px !important;
+  }
+  #index{
+    #hero-text-container{
+      font-size: 1em;
+      }
+      $container-width:410px;
+      #hero-text-container, #hero-text-skew{
+        width:   $container-width;
+      }
+      #hero-btn{
+        right: 200px;
+    }
+
+      #features #offer-features{
+        font-size: 0.92em;
+        margin-right: 10px;
+      }
+      #features{
+        #collaboration-features{
+          video{
+            transform: translateY(-550px);
+            left: -75%;
+            position: relative;
+            opacity: 0.85;
+          }
+        }
+      }
+
+    }
+
+    #offer{
+      .our-offer{
+        $sq-width: 500px;
+        $sq-height: 1150px;
+        .square-right{
+          border-width: 0 $sq-width $sq-height 0;
+
+        }
+        .square-left{
+          border-width: $sq-height 0 0 $sq-width;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:1200px){
+  html {
+    body{
+    $font-size: 17px;
+    font-size: $font-size;
+    }
+    .nav-bar {
+      #nav-logo-skew{
+        height: 100px;
+        width: 375px;
+       }
+      #nav-logo img{
+        height: 65px;
+      }
+    }
+    .sidebar-menu{
+      margin-right: 60px !important;
+    }
+
+    #index{
+      #hero-text-container{
+
+        font-size: 0.95em;
+        }
+        $container-width:330px;
+        #hero-text-container, #hero-text-skew{
+          width:   $container-width;
+        }
+        #hero-text{
+        margin-top: 65px;
+        .copy-text:nth-last-child(1){
+            letter-spacing: 9px;
+          }
+        }
+
+        #hero-btn{
+          bottom: 450px;
+          right: 60px;
+        }
+
+        #features #offer-features{
+          font-size: 0.8em;
+          margin-right: 10px;
+        }
+        #features #collaboration-features{
+            video{
+              left: -94%;
+                }
+              }
+      }
+
+      #kim-jestesmy{
+        .offset-lg-1{
+          margin-left: 7.5%;
+        }
+          #history-sketch {
+            z-index: -1;
+            height: 600px;
+            position: absolute;
+          }
+      }
+
+      #offer{
+        .our-offer{
+          $sq-width: 300px;
+          $sq-height: 1150px;
+          .square-right{
+            border-width: 0 $sq-width $sq-height 0;
+
+          }
+          .square-left{
+            border-width: $sq-height 0 0 $sq-width;
+          }
+
+          .section_2 .row{
+            margin: 50px auto;
+          }
+          #offer-parallel-truck{
+            bottom: 65px;
+
+          }
+          .offer-parallel-truck{
+            bottom: 65px;
+
+          }
+        }
+      }
+    }
+
+  }
+
+    @media only screen and (max-width:992px){
+
+    html{
+      body{
+        font-size: 16px;
+      }
+      .nav-bar .active div{
+        height: 4px;
+      }
+      .video-row{
+        display: none;
+      }
+      .question-row{
+        padding-bottom: 70px;
+      }
+      footer{
+        padding-top: 70px;
+      }
+
+      #index{
+        #hero-text-container, #hero-text-skew {
+          left: 0;
+          right: initial;
+          float: left;
+          height: 350px;
+          transform:initial;
+          background: transparent;
+        }
+        #hero-text{
+          margin-top: 50px;
+          transform: initial;
+          float: left;
+          span{
+            // @include BgBlur2(0.2);
+          }
+        }
+        #hero-text-container{
+          // bottom: 10%;
+        }
+        #hero-btn{
+          right: initial;
+          left: 300px;
+          bottom: 400px;
+        }
+        #features{
+          color: $white !important;
+          #offer-features{
+            font-size: 0.95em;
+            p,h1,a{
+              margin-right: 40px;
+            }
+          }
+
+          #offer-features, #contact-us-features{
+            width: 100%;
+          }
+          #contact-us-features{
+            p,h1,a{
+              margin-left: 30px;
+            }
+          }
+          #contact-us-features-js, #apply-features-js{
+            margin-bottom: 50px;
+          }
+          #collaboration-features{
+            background-image: url(img/mercedes_benz_truck.jpg);
+            background-size: cover;
+            background-position: center;
+
+          }
+          .video-container{
+            display: none;
+          }
+        }
+      }
+
+      #kim-jestesmy{
+        .offset-lg-1{
+          margin-left: 0;
+        }
+
+
+        #office-img{
+          margin-top: 105px;
+        }
+
+        .fleet-text{
+          margin: 50px auto;
+          &:first-of-type{
+            height: 640px;
+          }
+          &:last-of-type{
+            height: 500px;
+          }
+          img{
+            right: 0;
+            margin:auto;
+          }
+        }
+
+
+      }
+
+      #offer{
+        $experience-img-height:325px;
+        #experience{
+
+          .experience-description{
+            height: $experience-img-height;
+          }
+
+          .experience-img{
+            img{
+              height: $experience-img-height;
+            }
+          }
+          // .experience-row{
+          //   height: $experience-img-height *2;
+          // }
+          .experience-h1,.experience-h1-right{
+            margin-top: 80px;
+          }
+        }
+        #fleet.section{
+          padding-bottom: 0;
+        }
+          .section_2 .row{
+            margin: 80px auto;
+          }
+
+          .our-offer{
+            margin-bottom: 0;
+            $sq-width: 200px;
+            $sq-height: 1150px;
+            .square-right{
+              border-width: 0 $sq-width $sq-height 0;
+
+            }
+            .square-left{
+              border-width: $sq-height 0 0 $sq-width;
+            }
+
+
+          }
+      }
+      #contact{
+        #contact-us{
+
+        #form-kolumna{
+          opacity: 1;
+        }
+        }
+      }
+    }
+  }
+
+
+
+
+    @media only screen and (max-width:767px){
+        $font-size:16px;
+        html{
+          body{
+            font-size: $font-size;
+
+            }
+            .question-row .container{
+              h2{
+                font-size: 1.8em;
+              }
+              a{
+                margin-top: 20px;
+                bottom: 0;
+              }
+              .btn-primary{
+                padding: 10px 10px;
+              }
+            }
+            #index{
+              #hero-header{
+                height: 525px;
+                margin-bottom: 120px;
+             }
+              #hero-btn{
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 275px;
+              }
+
+              #features{
+                #offer-features{
+                  background-position: 26% 70%;
+                }
+              }
+            }
+
+            #kim-jestesmy{
+              .offset-lg-1{
+                margin-left: 7.5%;
+              }
+              #history-text{
+                color: $white;
+              }
+              #history-sketch {
+                padding: 0;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -45px;
+                width: 100%;
+                img{
+                  width: 100%;
+                  height: 450px;
+                  opacity: 0.4;
+                }
+              }
+              #office-img{
+                position: relative;
+                width: 100%;
+                img{
+                  width: 60%;
+                  display: block;
+                  margin: 0 auto;
+                }
+              }
+              #fleet.section{
+                padding-bottom: 0;
+              }
+            }
+
+            #offer{
+              #offer-image{
+                 opacity: 0.15;
+              }
+              .offer-mask{
+                @include BgBlur1($black, 0.9);
+              }
+
+              #experience{
+                .experience-row{
+                  height: 650px;
+                  margin:50px 0 !important;
+                }
+                .experience-description-span{
+                  width: 100%;
+                }
+
+                $experience-img-height:280px;
+
+
+                  .experience-description{
+                    height: $experience-img-height;
+                  }
+                  .experience-img{
+                    img{
+                      height: $experience-img-height;
+                    }
+                  }
+                  .experience-row{
+                    height: $experience-img-height *2;
+                  }
+
+                  .experience-h1,.experience-h1-right{
+                    margin-top: 80px;
+                  }
+
+                }
+
+
+              #fleet-info{
+                .col-md-4 {
+                  width: 100%;
+                }
+              }
+              #fleet.section{
+                padding-bottom: 0;
+              }
+              .square-right{
+                display: none;
+              }
+              .square-left{
+                display: none;
+              }
+              .our-offer{
+                margin-bottom: 0;
+                .section_2 .row{
+                  margin: 80px auto;
+                }
+
+                .offer-text {
+                  height: 700px;
+                  #map-img{
+                    margin-right:0;
+                  }
+                }
+                #offer-parallel-truck{
+                  bottom: -50px;
+                  margin: 0;
+                  padding: 0;
+                  left: -2%;
+
+                }
+                .offer-parallel-truck{
+                  bottom: -50px;
+                  margin: 0;
+                  padding: 0;
+                  left: -2%;
+
+                }
+                img:first-child{
+                  bottom: -15px;
+                }
+              }
+              .logo-count{
+                background-position: 55% 20%;
+                height: 23px;
+              }
+
+
+          }
+
+            #contact{
+              .btn-primary{
+
+              }
+            }
+          }
+
+      }
+
+    @media only screen and (max-width:575px){
+        $font-size:14px;
+        html{
+        body{
+          font-size: $font-size;
+
+          }
+          .page{
+            margin-top: -20px;
+          }
+
+          .nav-bar{
+            height: 40px;
+            .sidebar-menu{
+              height: 235px;
+              top: 70px;
+            }
+            #nav-logo-skew{
+              z-index: 1000;
+              height: 80px;
+              width: 300px;
+            }
+            #nav-logo{
+              img{
+                height: 50px;
+                width: auto;
+                position: absolute;
+                left: 50px;
+                top: 12px;
+                transform: skew(45deg);
+              }
+            }
+            .mobile-nav{
+              font-size: 1.1em;
+              margin-top: 25px;
+            }
+          }
+
+          #index{
+            #hero-header{
+              height: 475px;
+              margin-bottom: 100px;
+           }
+            #hero-btn{
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              bottom: 250px;
+            }
+            #hero-text-container{
+              $copy-right-pos:65px;
+              span{
+                &:nth-last-child(2){
+                  right: $copy-right-pos;
+                }
+              }
+              .copy-text{
+                &:nth-last-child(3){
+                  right: $copy-right-pos;
+                }
+                &:nth-last-child(1){
+                  right: $copy-right-pos;
+                }
+              }
+            }
+            #features{
+              #offer-features{
+                background-position: 18% 70%;
+              }
+            }
+          }
+
+          #kim-jestesmy{
+            #history-sketch {
+              margin-top: -60px;
+              img{
+                width: 100%;
+                height:90%;
+                opacity: 0.45;
+              }
+            }
+
+            #office-img{
+              transition: none;
+              transform: none;
+              position: relative;
+              width: 100%;
+              padding: 0;
+              img{
+                transition: none;
+                transform: none;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+                &:hover{
+                  transition: none;
+                  transform: none;
+                }
+              }
+            }
+          }
+
+          #contact{
+            #contact-us{
+              margin-top: 150px;
+            }
+            .form-group{
+              display: inline-block;
+              width: 100%;
+            }
+            .last{
+              margin-bottom: 60px;
+            }
+          }
+        #footer{
+          .footer-links{
+            padding: 0;
+          }
+        }
+
+
+
+  }
+}
+
+    @media only screen and (max-width:480px){
+        $font-size:11px;
+        html{
+        body{
+          font-size: $font-size;
+        }
+        .nav-bar{
+          #nav-logo img{
+            height: 42px;
+          }
+        #nav-logo-skew{
+          width: 260px;
+        }
+      }
+
+
+        #index{
+          #hero-header{
+            height: 475px;
+            margin-bottom: 100px;
+            font-size: 0.95em;
+         }
+          #hero-btn{
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: 315px;
+            width: 150px;
+          }
+          .btn-primary{
+            width: 130px !important;
+          }
+          #hero-text-container{
+            font-size: 0.9em;
+            #hero-text-skew{
+              padding-left: 0;
+            }
+            $copy-left-pos:10px;
+            span{
+              &:nth-last-child(2){
+                left: $copy-left-pos;
+                right: initial;
+                top: 10px;
+              }
+            }
+            .copy-text{
+              &:nth-last-child(3){
+                left: $copy-left-pos;
+                right: initial;
+                font-size: 3.2em;
+
+              }
+              &:nth-last-child(1){
+                left: $copy-left-pos;
+                right: initial;
+                top: 26px;
+              }
+            }
+            #hero-text span {
+              background:initial;
+          }
+          }
+        }
+
+        #kim-jestesmy{
+          .fleet-text:first-of-type{
+            height: 500px;
+          }
+        }
+
+
+        #offer{
+          .our-offer{
+            .offer-text {
+              height: 550px;
+            }
+            .section_2.row{
+              margin-top: 120px;
+            }
+          }
+          .logo-count{
+            background-position: 60% 20%;
+          }
+        }
+
+
+
+      }
+
+}
+
+@media screen and (max-height:700px){
+    html{
+
+  }
+}
+
+@media screen and (max-height:500px){
+    html{
+
+  }
+}

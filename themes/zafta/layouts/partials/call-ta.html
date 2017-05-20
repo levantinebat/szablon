@@ -1,0 +1,16 @@
+{{ $title := (.Params.body_id) }}
+{{ $contact := "contact" }}
+
+{{ if not (eq $title $contact) }}
+<div class="question-row text-center">
+  <div class="question-row-mask">
+  </div>
+
+      <div class="container">
+        <h2> {{ .Params.cta_text }}</h2>
+        <a class="btn-primary btn-about" href="{{ .Site.BaseURL }}{{ .Params.cta_direction }}"> {{ .Params.cta_btn_text }}</a>
+      </div>
+
+  </div>
+
+{{ end }}

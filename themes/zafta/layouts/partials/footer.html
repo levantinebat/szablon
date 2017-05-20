@@ -1,0 +1,73 @@
+{{ $contact := "contact" }}
+
+</div>
+<footer id="footer" role="contentinfo">
+  <div class="container text-center">
+     <div class="row zero footer-row">
+      <div class="col-md-3 col-sm-6 zero col-xs-12 footer-links-div">
+          <ul class="footer-links">
+
+              <li><a href="{{ .Site.BaseURL }}">Główna</a></li>
+          </ul>
+      {{ $currentPage := . }}
+    </div>
+      {{ range .Site.Menus.main }}
+      {{ $is := $currentPage.IsMenuCurrent "main" . }}
+
+      <div class="col-md-3 col-sm-6 zero  col-xs-12 footer-links-div">
+        <ul class="footer-links">
+
+        <li><a class= "" href="{{ .URL }}">
+            <span>{{ .Name }}</span>
+          </a></li>
+      </ul>
+    </div>
+      {{end}}
+              <!-- <li><a href="o_nas.html#oferta">Oferta</a></li>
+      <div class="zero col-md-2 col-sm-6 col-xs-5 footer-links-div">
+          <ul class="footer-links">
+              <li><a href="o_nas.html#oferta">O nas</a></li>
+          </ul>
+      </div>
+      <div class="zero col-md-2 col-sm-6  col-xs-5 footer-links-div">
+          <ul class="footer-links">
+              <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+      </div>
+      </div> -->
+    </div>
+
+
+    <div class="row copyright text-center" id="row-copyright">
+      <!-- <div class="col-md-12 text-center">
+            <li><a href="https://www.facebook.com/mebroll.eu/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      </div> -->
+      <p class="col-sm-12">
+        <small class="block">Copyright by {{ .Site.Params.company_name }} 2017 &copy;.</small>
+        <small class="author">awesome design by <a class="author" href="http://www.dkcomm.dk">D<span>.</span>K</a> </small>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+{{ if eq .Params.body_id $contact}}
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD-aw4LCsObVczuP62rNULaw5xLvZEgSc&callback=initMap">
+</script>
+<script src="../js/form.min.js"></script>
+
+
+{{ end }}
+
+<!-- Bootstrap -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+{{ "<!-- Waypoints -->" | safeHTML }}
+<script src="{{ if eq .Site.Title .Title}}./js/jquery.waypoints.min.js{{else}}../js/jquery.waypoints.min.js{{ end }}"></script>
+
+{{ "<!-- Main JS File -->" | safeHTML }}
+<script src= "{{ if eq .Site.Title .Title}}./js/main.js{{else}}../js/main.js{{ end }}"></script>
+
+
+</body>
+</html>

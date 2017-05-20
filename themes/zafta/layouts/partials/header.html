@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{ partial "head/favicon.html" . }}
+		{{ partial "head/meta.html" . }}
+		{{ "<!-- stylesheets -->" | safeHTML }}
+		{{ partial "head/stylesheets.html" . }}
+
+		{{ "<!-- JS scripts -->" | safeHTML }}
+		{{ partial "head/javascript.html" . }}
+
+		{{ "<!-- google analytics -->" | safeHTML }}
+		<script>
+
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', '{{ .Site.Params.GACode }}', 'auto');
+	  ga('send', 'pageview');
+		</script>
+
+
+</head>
+
+<body id="{{ if eq .Site.Title .Title}}index{{else}}{{.Params.body_id}}{{end}}">

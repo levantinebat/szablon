@@ -1,0 +1,57 @@
+footer{
+  background: darken($color2, 25%);
+  margin-top: 0;
+  ul li{
+    list-style: none;
+  }
+  .footer-links{
+    a{
+      color: $white;
+      opacity: 0.7;
+    }
+  }
+
+}
+#footer{
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  $color-author: #6bf;
+  .footer-links-div{
+    margin-top: 0;
+    margin-bottom: -10px;
+  }
+  // .fa-facebook{
+  //   font-size: 140%;
+  //   color:$color1;
+  //   margin-top: -5px;
+  // }
+  small{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    font-size: 70%;
+  }
+
+  small.author a span{
+    font-size:200%;
+    color:$color-author;
+  }
+  small.author{
+    letter-spacing: 4px;
+    font-size: 55%;
+    color: $grey;
+  }
+  .author a{
+    letter-spacing: 0px;
+    margin-left: 5px;
+    font-size: 165%;
+    color:#fff !important;
+  }
+  .copyright{
+    margin:0 auto;
+    .text-center{
+      margin-bottom: 0;
+    }
+  }
+}

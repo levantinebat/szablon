@@ -1,0 +1,95 @@
++++
+date = "2017-04-09T22:45:09+02:00"
+title = "Skontaktuj się"
+body_id= "contact"
+[menu]
+  [menu.main]
+    name = "Kontakt"
+    weight = 6
++++
+<div class="sekcja" id="contact-us">
+  <div class="container">
+    <div class="text-center">
+      <h1 id="kontakt-h1"> Skontaktuj się z nami! <div class="kontakt-hr"></div></h1>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12" id="form-kolumna">
+        <form id="ajax-contact" class="right form-horizontal" method="post" action="../contact.php" enctype="multipart/form-data">
+          <div class="form-group col-sm-12 right" id="form-choose-option">
+            <p class="col-sm-3 choose-option"> Wybierz opcję</p>
+            <select id="select-option" class="col-sm-6 form-control" name="select-option" size="2" onchange="addCV(this)">
+              <option id="select_zapytanie" value="zapytanie">Zapytanie</option>
+              <option id= "select_aplikacja" name="aplikacja" value="aplikacja" onclick="aplikacja_click()" >Aplikacja o pracę</option>
+            </select>
+          </div>
+
+              <div class="form-group col-sm-12 right">
+                <label for="name" class="col-sm-3 control-label">Imię i nazwisko</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Twoje imię i nazwisko" value="" required>
+                </div>
+              </div>
+              <div class="form-group col-sm-12 right">
+                  <label for="telefon" class="col-sm-3 control-label">Numer telefonu</label>
+                  <div class="col-sm-6">
+                      <input type="number" class="form-control" id="telefon" name="telefon" placeholder="Twój numer telefonu" value="" required>
+                  </div>
+              </div>
+
+              <div class="form-group col-sm-12 right">
+                  <label for="telefon" class="col-sm-3 control-label">E-Mail</label>
+                  <div class="col-sm-6">
+                      <input type="text" class="form-control" id="mail" name="mail" placeholder="Twój adres e-mail" value="" required>
+                  </div>
+              </div>
+              <div class="form-group col-sm-12 right">
+                  <label for="town" class="col-sm-3 control-label">Miejscowość</label>
+                  <div class="col-sm-6">
+                      <input type="text" class="form-control" id="town" name="town" placeholder="Miejsce zamieszkania" value="" required>
+                  </div>
+              </div>
+              <div class="form-group col-sm-12 right" id="form-text-area">
+                  <label for="town" class="col-sm-3 control-label">Treść</label>
+                  <div class="col-sm-6">
+                    <textarea name="Text1" cols="30" rows="5"></textarea>
+                  </div>
+                </div>
+              <div id="form-cv" class="form-group col-sm-12 right">
+                  <label for="attachment" class="col-sm-3 control-label">Załącznik (CV)</label>
+                  <div class="col-sm-6">
+                     <input type="file" name="cv_file"  />
+                  </div>
+              </div>
+              <div id="motivation-letter" class="form-group col-sm-12 right">
+                  <label for="attachment" class="col-sm-3 control-label">Załącznik (List motywacyjny)</label>
+                  <div class="col-sm-6">
+                     <input type="file" name="letter_file"  />
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-md-3 offset-md-5 col-sm-3 offset-sm-4 text-center">
+                      <input id="submit" name="submit" type="submit" value="Gotowe!" class="btn-primary btn-about">
+                  </div>
+              </div>
+              <div id="formMessages" class="col-sm-12 text-center success error">
+              </div>
+            </form>
+            <div class='progress' id="progress_div">
+            <div class='bar' id='bar1'></div>
+            <div class='percent' id='percent1'>0%</div>
+            </div>
+          </div>
+
+        </div>
+  </div>
+
+  <div class="" id="google-maps-kontakt">
+
+    <div id="map"></div>
+
+    <script src="../js/map.js">
+    </script>
+
+  </div>
+
+</div>

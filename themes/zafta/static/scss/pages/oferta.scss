@@ -1,0 +1,181 @@
+#offer{
+
+  background: $grey;
+  position: relative;
+  // background: url(img/road.jpg);
+  // background-repeat:no-repeat;
+  // background-attachment: fixed;
+  //  background-position: center;
+  //  background-size: cover;
+  //  z-index: 10000;
+  // color: $black;
+  .video-row{
+    margin-bottom: 0;
+  }
+  .page{
+    position: relative;
+  }
+  #offer-image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(img/tir_mercedes_tlo.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     opacity: 0.6;
+
+  }
+  .offer-mask{
+    @include BgBlur1($black, 0.65);
+  }
+  #experience .container .full-w{
+    opacity: 0;
+    @media only screen and (max-width:992px){
+      opacity: 1;
+    }
+  }
+    .experience-row{
+      margin: 60px 0 !important;
+    }
+
+    .full-w{
+    }
+    $experience-img-height:380px;
+    $experience-description-height:$experience-img-height + $experience-img-height * 0.2;
+    .experience-description{
+      background-color: $color1;
+      text-align: center;
+      height: $experience-img-height;
+    }
+    .experience-h1, .experience-h1-right{
+      font-size: 3em;
+      font-family: $font-family-second;
+      display: inline-block;
+      div{
+        margin-left: 10px;
+        width: 30%;
+      }
+    }
+    .experience-description-span{
+      display: inline-block;
+    }
+    .experience-img{
+      position: relative;
+      height: 100%;
+      img{
+        position: absolute;
+        // max-height: $experience-img-height;
+        // float: right;
+        height: $experience-img-height;
+        width: 100%;
+      }
+    }
+
+
+
+  #fleet-info .col-md-4 {
+    width: 33%;
+  }
+  .our-offer{
+    background: $color1;
+    color: $grey;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    h1{
+      position: absolute;
+      left: 5%;
+    }
+    $sq-width: 650px;
+    $sq-height: 1150px;
+    .square-right{
+      border-width: 0 $sq-width $sq-height 0;
+      border-color: transparent $grey-dark transparent transparent;
+
+    }
+    .square-left{
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: $sq-height 0 0 $sq-width;
+      border-color: transparent transparent transparent $grey-dark;
+    }
+    .section_2{
+      margin-top: 150px;
+      margin-left: 35px;
+      margin-right: 35px;
+      .row{
+        margin: 100px auto;
+      }
+    }
+    h3{
+      margin-top: 60px;
+    }
+    $offer-text-distance: 0;
+    .offer-text{
+      @extend .fleet-text;
+      #map-img{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 45px;
+      }
+    }
+    .offer-text-img{
+      margin-top: 50px;
+    }
+    .offer-text:first-child{
+      img{
+      }
+    }
+    .offer-parallel-truck{
+      bottom: 0px;
+      padding-left: 15px;
+      border-radius: 15px;
+
+
+    }
+    .offer-text:nth-last-child(2){
+      margin-top: $offer-text-distance;
+    }
+    .offer-text:last-child{
+      margin-top: $offer-text-distance * 2;
+    }
+  }
+
+
+  .logo-count{
+    font-family: $font-family-second;
+    background-image: url(img/logo-img.png);
+    height: 27px;
+    background-position: 60% 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .number-count{
+      margin-bottom: 20px;
+      text-align: left;
+      font-size: 1.6em;
+    }
+  }
+
+  .video-row{
+    height: 550px;
+    video{
+      background-image: url(img/siedziba_firmy.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-240px);
+      @media only screen and (max-width:1400px){
+        transform: translateY(-65px);
+      }
+      @media only screen and (max-width:1200px){
+        transform: initial;
+      }
+    }
+  }
+}

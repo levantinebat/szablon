@@ -1,0 +1,90 @@
+// ***********************************
+// MIXINS
+// ***********************************
+
+@mixin transition-all($time:1s){
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+
+@mixin fade($time:0.5s){
+	-webkit-transition: background-color $time ease-in-out;
+	-moz-transition: background-color $time ease-in-out;
+	-o-transition: background-color $time ease-in-out;
+	-ms-transition: background-color $time ease-in-out;
+	transition: background-color $time ease-in-out;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin inline-block() {
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+
+@mixin translateX($translatex) {
+	-moz-transform: translateX($translatex);
+	-webkit-transform: translateX($translatex);
+	-ms-transform: translateX($translatex);
+	-o-transform: translateX($translatex);
+	transform: translateX($translatex);
+}
+@mixin translateY($translateY) {
+	-moz-transform: translateY($translateY);
+	-webkit-transform: translateY($translateY);
+	-ms-transform: translateY($translateY);
+	-o-transform: translateY($translateY);
+	transform: translateY($translateY);
+}
+
+@mixin blur($blur) {
+	-webkit-filter: blur($blur);
+	-moz-filter: blur($blur);
+	-ms-filter: blur($blur);
+	-o-filter: blur($blur);
+	filter: blur($blur);
+}
+
+@mixin BgBlur1($col,$bgBlur1) {
+  background: rgba(($col), $bgBlur1);
+
+}
+@mixin BgBlur2($bgBlur2) {
+	background: rgba(126,127,130,$bgBlur2);
+}
+@mixin l-r-gradient ($lgradient,$rgradient) {
+	background: linear-gradient(130deg, rgba(126, 127, 130, $lgradient), rgba(169, 42, 49,$rgradient));
+
+}
+
+@mixin icomoon() {
+
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+@mixin center-div {
+	margin:0 auto;
+	padding:0 auto;
+
+}
+@mixin padMarReset {
+	padding:0;
+	margin:0;
+}

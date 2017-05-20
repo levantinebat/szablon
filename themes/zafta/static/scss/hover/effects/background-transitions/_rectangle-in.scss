@@ -1,0 +1,40 @@
+/* Rectangle In */
+@mixin rectangle-in {
+	@include hacks();
+	position: relative;
+	@include BgBlur1(darken($color2,20%),0.15);
+	@media only screen and (max-width:992px){
+		@include BgBlur1(darken($color2,20%),0.1);
+	}
+
+	@include prefixed(transition-property, color);
+	@include prefixed(transition-duration, $fastDuration);
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include BgBlur1($black,0.2);
+		@include prefixed(transform, scale(1));
+		@include prefixed(transition-property, transform);
+		@include prefixed(transition-duration, $fastDuration);
+		@include prefixed(transition-timing-function, ease-out);
+		@media only screen and (max-width:992px){
+			@include BgBlur1 ($black,0.15);
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+
+		&:before {
+			@include prefixed(transform, scale(0));
+		}
+	}
+}

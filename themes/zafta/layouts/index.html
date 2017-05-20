@@ -1,0 +1,93 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+<div class="page">
+
+<div class="section" id="hero-header">
+    <div id="hero-text-container">
+      <div id=hero-text-skew>
+        <div id="hero-text">
+          <div id="hero-text-mask">
+          </div>
+            <span class="copy-text">Rzetelni.</span>
+            <span class="copy-text">Terminowi.</span>
+            <span id="copy-last" class="copy-text">Niezawodni.</span>
+        </div>
+      </div>
+    </div>
+    <a id="hero-btn" class="btn-primary" href="#features">Poznaj nas</a>
+
+    <div id="hero-vid-container" class="col-lg-10 left">
+      <div id="hero-vid-mask">
+
+      </div>
+
+    </div>
+
+  </div>
+<div id="features" class="js--wp-features">
+  <div class="full-w row">
+    <div id="f-features" class="image-grid">
+      <div id="about-features" class="col-md-12 col-lg-6">
+        <div id="about-us-features" class="row">
+          <div class="about-mask hvr-rectangle-in">
+            <div class="about-text">
+              <h1 class="about-header">Kim jesteśmy?</h1>
+              <p class="about-paragraph">Poznaj historię i profil naszej firmy.</p>
+              <a class="btn-primary btn-about hvr-float" href="{{ .Site.BaseURL }}kim-jestesmy">Zobacz</a>
+            </div>
+          </div>
+        </div>
+        <div id="collaboration-features" class="js--wp-sect-1 row">
+          <div class="about-mask hvr-rectangle-in">
+            <div class="video-container ">
+              <video class="" src="{{ .Site.BaseURL }}videos/transport_miedzynarodowy.mp4" loop  autoplay poster="posterimage.jpg">
+              </video>
+            </div>
+            <div class="about-text">
+              <h1 class="about-header">Nasza flota.</h1>
+              <p class="about-paragraph">Nowoczesna flota do Twojej dyspozycji.</p>
+              <a class="btn-primary btn-about hvr-float" href="{{ .Site.BaseURL }}kim-jestesmy#fleet">Zobacz</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="offer-features-js" class="">
+
+      <div id="offer-features" class="col-md-12 col-lg-6">
+        <div id="offer-features-mask" class="hvr-shutter-in-vertical">
+          <h1 class="offer-header">Konkurencyjna oferta.</h1>
+          <p class="offer-paragraph">Poznaj usługi, które możemy Ci zaoferować.</p>
+          <a class="btn-primary btn-cta hvr-float" href="{{ .Site.BaseURL }}oferta">Poznaj</a>
+        </div>
+      </div>
+    </div>
+    <div id="contact-us-features-js" class="">
+
+      <div id="contact-us-features" class="col-md-12 col-lg-6">
+        <div class="about-mask hvr-sweep-to-bottom">
+          <h1 class="offer-header">Skontaktuj się z nami.</h1>
+          <p class="offer-paragraph">Potrzebujesz pomocy? Przedstawimy Ci ofertę na nasze usługi
+          transportowe.</p>
+          <a class="btn-primary btn-cta hvr-float" href="{{ .Site.BaseURL }}kontakt">Napisz do nas</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="apply-features-js" class="">
+      <div id="apply-features" class="col-md-12 col-lg-6">
+        <div class="about-mask hvr-rectangle-in">
+          <div class="about-text">
+            <h1 class="about-header">Potrzebni kierowcy.</h1>
+            <p class="about-paragraph">Poszukujemy doświadczonych kierowców.</p>
+            <a id="btn-aplikacja" class="btn-primary btn-about hvr-float" onclick="aplikacja_click()">Aplikuj</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,294 @@
+  <!DOCTYPE html>
+<html>
+	<head>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+		<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport">
+<meta name="author" content= DK&#32;Commerce&#32;&amp;&#32;Dealings />
+<title>Skontaktuj się</title>
+<meta name="description" content= "Najpewniejszy międzynarodowy transport ładunków lądowych, fracht i spedycja tylko z LoggerMTS z siedzibą w Raciborzu" />
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="/css/hover.css">
+<link rel="stylesheet" href="/css/animate.css">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+
+		<!-- JS scripts -->
+		
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+<script src="../js/maplace.min.js"></script>
+
+<!-- Media JS -->
+<script src= "../js/media.min.js"></script>
+
+
+		<!-- google analytics -->
+		<script>
+
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-99260209-1', 'auto');
+	  ga('send', 'pageview');
+		</script>
+
+
+</head>
+
+<body id="contact">
+
+  <nav class="nav-bar">
+		<div class="row">
+			<div id="nav-logo-skew" class="col-xs-2 text-left">
+				<div id="nav-logo"><a href="/"> <img src="/logo.png" alt="">
+				</a> </div>
+			</div>
+				<ul class="sidebar-menu">
+
+					<li class= "nav-li" >
+						<a class= "nav-a " href="/">
+							<span>Główna</span>
+							<div></div>
+						</a>
+					</li>
+          
+          
+					
+              
+            <li class= "nav-li" >
+            <a class= " nav-a  " href="/kim-jestesmy/">
+                
+                <span>O firmie</span>
+								<div></div>
+            </a>
+          
+          </li>
+          
+					
+              
+            <li class= "nav-li" >
+            <a class= " nav-a  " href="/oferta/">
+                
+                <span>Oferta</span>
+								<div></div>
+            </a>
+          
+          </li>
+          
+					
+              
+            <li class= "nav-li" >
+            <a class= " nav-a nav-cta active" href="/kontakt/">
+                
+                <span>Kontakt</span>
+								<div></div>
+            </a>
+          
+          </li>
+          
+        </ul>
+				<div class="mob-nav col-xs-3 offset-xs-7">
+					<a href="#" class="bold mob-anchor">menu></a>
+
+				</div>
+		</div>
+
+</nav>
+
+  <div class="page">
+
+
+   <div class="sekcja" id="contact-us">
+  <div class="container">
+    <div class="text-center">
+      <h1 id="kontakt-h1"> Skontaktuj się z nami! <div class="kontakt-hr"></div></h1>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12" id="form-kolumna">
+        <form id="ajax-contact" class="right form-horizontal" method="post" action="../contact.php" enctype="multipart/form-data">
+          <div class="form-group col-sm-12 right" id="form-choose-option">
+            <p class="col-sm-3 choose-option"> Wybierz opcję</p>
+            <select id="select-option" class="col-sm-6 form-control" name="select-option" size="2" onchange="addCV(this)">
+              <option id="select_zapytanie" value="zapytanie">Zapytanie</option>
+              <option id= "select_aplikacja" name="aplikacja" value="aplikacja" onclick="aplikacja_click()" >Aplikacja o pracę</option>
+            </select>
+          </div>
+
+              <div class="form-group col-sm-12 right">
+                <label for="name" class="col-sm-3 control-label">Imię i nazwisko</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Twoje imię i nazwisko" value="" required>
+                </div>
+              </div>
+              <div class="form-group col-sm-12 right">
+                  <label for="telefon" class="col-sm-3 control-label">Numer telefonu</label>
+                  <div class="col-sm-6">
+                      <input type="number" class="form-control" id="telefon" name="telefon" placeholder="Twój numer telefonu" value="" required>
+                  </div>
+              </div>
+
+              <div class="form-group col-sm-12 right">
+                  <label for="telefon" class="col-sm-3 control-label">E-Mail</label>
+                  <div class="col-sm-6">
+                      <input type="text" class="form-control" id="mail" name="mail" placeholder="Twój adres e-mail" value="" required>
+                  </div>
+              </div>
+              <div class="form-group col-sm-12 right">
+                  <label for="town" class="col-sm-3 control-label">Miejscowość</label>
+                  <div class="col-sm-6">
+                      <input type="text" class="form-control" id="town" name="town" placeholder="Miejsce zamieszkania" value="" required>
+                  </div>
+              </div>
+              <div class="form-group col-sm-12 right" id="form-text-area">
+                  <label for="town" class="col-sm-3 control-label">Treść</label>
+                  <div class="col-sm-6">
+                    <textarea name="Text1" cols="30" rows="5"></textarea>
+                  </div>
+                </div>
+              <div id="form-cv" class="form-group col-sm-12 right">
+                  <label for="attachment" class="col-sm-3 control-label">Załącznik (CV)</label>
+                  <div class="col-sm-6">
+                     <input type="file" name="cv_file"  />
+                  </div>
+              </div>
+              <div id="motivation-letter" class="form-group col-sm-12 right">
+                  <label for="attachment" class="col-sm-3 control-label">Załącznik (List motywacyjny)</label>
+                  <div class="col-sm-6">
+                     <input type="file" name="letter_file"  />
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-md-3 offset-md-5 col-sm-3 offset-sm-4 text-center">
+                      <input id="submit" name="submit" type="submit" value="Gotowe!" class="btn-primary btn-about">
+                  </div>
+              </div>
+              <div id="formMessages" class="col-sm-12 text-center success error">
+              </div>
+            </form>
+            <div class='progress' id="progress_div">
+            <div class='bar' id='bar1'></div>
+            <div class='percent' id='percent1'>0%</div>
+            </div>
+          </div>
+
+        </div>
+  </div>
+
+  <div class="" id="google-maps-kontakt">
+
+    <div id="map"></div>
+
+    <script src="../js/map.js">
+    </script>
+
+  </div>
+
+</div>
+ 
+
+
+  
+
+
+
+
+  
+
+</div>
+<footer id="footer" role="contentinfo">
+  <div class="container text-center">
+     <div class="row zero footer-row">
+      <div class="col-md-3 col-sm-6 zero col-xs-12 footer-links-div">
+          <ul class="footer-links">
+
+              <li><a href="/">Główna</a></li>
+          </ul>
+      
+    </div>
+      
+      
+
+      <div class="col-md-3 col-sm-6 zero  col-xs-12 footer-links-div">
+        <ul class="footer-links">
+
+        <li><a class= "" href="/kim-jestesmy/">
+            <span>O firmie</span>
+          </a></li>
+      </ul>
+    </div>
+      
+      
+
+      <div class="col-md-3 col-sm-6 zero  col-xs-12 footer-links-div">
+        <ul class="footer-links">
+
+        <li><a class= "" href="/oferta/">
+            <span>Oferta</span>
+          </a></li>
+      </ul>
+    </div>
+      
+      
+
+      <div class="col-md-3 col-sm-6 zero  col-xs-12 footer-links-div">
+        <ul class="footer-links">
+
+        <li><a class= "" href="/kontakt/">
+            <span>Kontakt</span>
+          </a></li>
+      </ul>
+    </div>
+      
+              
+    </div>
+
+
+    <div class="row copyright text-center" id="row-copyright">
+      
+      <p class="col-sm-12">
+        <small class="block">Copyright by LoggerMTS 2017 &copy;.</small>
+        <small class="author">awesome design by <a class="author" href="http://www.dkcomm.dk">D<span>.</span>K</a> </small>
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD-aw4LCsObVczuP62rNULaw5xLvZEgSc&callback=initMap">
+</script>
+<script src="../js/form.min.js"></script>
+
+
+
+
+
+
+<!-- Waypoints -->
+<script src="../js/jquery.waypoints.min.js"></script>
+
+<!-- Main JS File -->
+<script src= "../js/main.js"></script>
+
+
+</body>
+</html>
+

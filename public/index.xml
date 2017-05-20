@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LoggerMTS transport międzynarodowy</title>
+    <link>/index.xml</link>
+    <description>Recent content on LoggerMTS transport międzynarodowy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pl-PL</language>
+    <lastBuildDate>Sun, 09 Apr 2017 22:45:09 +0200</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Skontaktuj się</title>
+      <link>/kontakt/</link>
+      <pubDate>Sun, 09 Apr 2017 22:45:09 +0200</pubDate>
+      
+      <guid>/kontakt/</guid>
+      <description>&lt;div class=&#34;sekcja&#34; id=&#34;contact-us&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+    &lt;div class=&#34;text-center&#34;&gt;
+      &lt;h1 id=&#34;kontakt-h1&#34;&gt; Skontaktuj się z nami! &lt;div class=&#34;kontakt-hr&#34;&gt;&lt;/div&gt;&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;row&#34;&gt;
+      &lt;div class=&#34;col-md-12 col-sm-12&#34; id=&#34;form-kolumna&#34;&gt;
+        &lt;form id=&#34;ajax-contact&#34; class=&#34;right form-horizontal&#34; method=&#34;post&#34; action=&#34;../contact.php&#34; enctype=&#34;multipart/form-data&#34;&gt;
+          &lt;div class=&#34;form-group col-sm-12 right&#34; id=&#34;form-choose-option&#34;&gt;
+            &lt;p class=&#34;col-sm-3 choose-option&#34;&gt; Wybierz opcję&lt;/p&gt;
+            &lt;select id=&#34;select-option&#34; class=&#34;col-sm-6 form-control&#34; name=&#34;select-option&#34; size=&#34;2&#34; onchange=&#34;addCV(this)&#34;&gt;
+              &lt;option id=&#34;select_zapytanie&#34; value=&#34;zapytanie&#34;&gt;Zapytanie&lt;/option&gt;
+              &lt;option id= &#34;select_aplikacja&#34; name=&#34;aplikacja&#34; value=&#34;aplikacja&#34; onclick=&#34;aplikacja_click()&#34; &gt;Aplikacja o pracę&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+
+              &lt;div class=&#34;form-group col-sm-12 right&#34;&gt;
+                &lt;label for=&#34;name&#34; class=&#34;col-sm-3 control-label&#34;&gt;Imię i nazwisko&lt;/label&gt;
+                &lt;div class=&#34;col-sm-6&#34;&gt;
+                    &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;name&#34; name=&#34;name&#34; placeholder=&#34;Twoje imię i nazwisko&#34; value=&#34;&#34; required&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;form-group col-sm-12 right&#34;&gt;
+                  &lt;label for=&#34;telefon&#34; class=&#34;col-sm-3 control-label&#34;&gt;Numer telefonu&lt;/label&gt;
+                  &lt;div class=&#34;col-sm-6&#34;&gt;
+                      &lt;input type=&#34;number&#34; class=&#34;form-control&#34; id=&#34;telefon&#34; name=&#34;telefon&#34; placeholder=&#34;Twój numer telefonu&#34; value=&#34;&#34; required&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;div class=&#34;form-group col-sm-12 right&#34;&gt;
+                  &lt;label for=&#34;telefon&#34; class=&#34;col-sm-3 control-label&#34;&gt;E-Mail&lt;/label&gt;
+                  &lt;div class=&#34;col-sm-6&#34;&gt;
+                      &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;mail&#34; name=&#34;mail&#34; placeholder=&#34;Twój adres e-mail&#34; value=&#34;&#34; required&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;form-group col-sm-12 right&#34;&gt;
+                  &lt;label for=&#34;town&#34; class=&#34;col-sm-3 control-label&#34;&gt;Miejscowość&lt;/label&gt;
+                  &lt;div class=&#34;col-sm-6&#34;&gt;
+                      &lt;input type=&#34;text&#34; class=&#34;form-control&#34; id=&#34;town&#34; name=&#34;town&#34; placeholder=&#34;Miejsce zamieszkania&#34; value=&#34;&#34; required&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;form-group col-sm-12 right&#34; id=&#34;form-text-area&#34;&gt;
+                  &lt;label for=&#34;town&#34; class=&#34;col-sm-3 control-label&#34;&gt;Treść&lt;/label&gt;
+                  &lt;div class=&#34;col-sm-6&#34;&gt;
+                    &lt;textarea name=&#34;Text1&#34; cols=&#34;30&#34; rows=&#34;5&#34;&gt;&lt;/textarea&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;div id=&#34;form-cv&#34; class=&#34;form-group col-sm-12 right&#34;&gt;
+                  &lt;label for=&#34;attachment&#34; class=&#34;col-sm-3 control-label&#34;&gt;Załącznik (CV)&lt;/label&gt;
+                  &lt;div class=&#34;col-sm-6&#34;&gt;
+                     &lt;input type=&#34;file&#34; name=&#34;cv_file&#34;  /&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div id=&#34;motivation-letter&#34; class=&#34;form-group col-sm-12 right&#34;&gt;
+                  &lt;label for=&#34;attachment&#34; class=&#34;col-sm-3 control-label&#34;&gt;Załącznik (List motywacyjny)&lt;/label&gt;
+                  &lt;div class=&#34;col-sm-6&#34;&gt;
+                     &lt;input type=&#34;file&#34; name=&#34;letter_file&#34;  /&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class=&#34;form-group&#34;&gt;
+                  &lt;div class=&#34;col-md-3 offset-md-5 col-sm-3 offset-sm-4 text-center&#34;&gt;
+                      &lt;input id=&#34;submit&#34; name=&#34;submit&#34; type=&#34;submit&#34; value=&#34;Gotowe!&#34; class=&#34;btn-primary btn-about&#34;&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div id=&#34;formMessages&#34; class=&#34;col-sm-12 text-center success error&#34;&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+            &lt;div class=&#39;progress&#39; id=&#34;progress_div&#34;&gt;
+            &lt;div class=&#39;bar&#39; id=&#39;bar1&#39;&gt;&lt;/div&gt;
+            &lt;div class=&#39;percent&#39; id=&#39;percent1&#39;&gt;0%&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+        &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;&#34; id=&#34;google-maps-kontakt&#34;&gt;
+
+    &lt;div id=&#34;map&#34;&gt;&lt;/div&gt;
+
+    &lt;script src=&#34;../js/map.js&#34;&gt;
+    &lt;/script&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Oferta</title>
+      <link>/oferta/</link>
+      <pubDate>Sun, 09 Apr 2017 14:18:21 +0200</pubDate>
+      
+      <guid>/oferta/</guid>
+      <description>&lt;div id=&#34;offer-image&#34;&gt;
+&lt;/div&gt;
+
+  &lt;div class=&#34;offer-mask&#34;&gt;
+
+    &lt;div class=&#34;section&#34; id=&#34;experience&#34;&gt;
+      &lt;div class=&#34;container&#34;&gt;
+        &lt;div class=&#34;full-w row experience-row&#34;&gt;
+          &lt;div class=&#34;col-md-4 experience-description zero&#34;&gt;
+            &lt;div class=&#34;square-left&#34;&gt;
+            &lt;/div&gt;
+            &lt;h1 class=&#34;experience-h1&#34;&gt;
+              &lt;div class=&#34;decoration-line-two&#34;&gt;
+              &lt;/div&gt;
+            15 000
+            &lt;/h1&gt;
+            &lt;span class=&#34;experience-description-span&#34;&gt;Sukcesem zakończonych transportów międzynarodowych.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;div class=&#34;col-md-8 experience-img zero&#34;&gt;
+          &lt;img src=&#34;../zaciski.jpg&#34; alt=&#34;&#34;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;div class=&#34;full-w row experience-row&#34;&gt;
+        &lt;div class=&#34;col-md-8 experience-img zero&#34; id=&#34;exp-img-first&#34;&gt;
+          &lt;img src=&#34;../daf_dark.jpg&#34; alt=&#34;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;col-md-4 experience-description zero&#34; id=&#34;exp-description-first&#34;&gt;
+          &lt;div class=&#34;square-right right&#34;&gt;
+          &lt;/div&gt;
+          &lt;h1 class=&#34;experience-h1-right&#34;&gt;
+            &lt;div class=&#34;decoration-line-two&#34;&gt;
+            &lt;/div&gt;
+            18
+          &lt;/h1&gt;
+          &lt;span class=&#34;experience-description-span&#34;&gt;Lat doświadczenia na rynku usług transportowych.&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+        &lt;div class=&#34;full-w row experience-row&#34;&gt;
+          &lt;div class=&#34;col-md-4 experience-description zero&#34;&gt;
+            &lt;div class=&#34;square-left&#34;&gt;
+            &lt;/div&gt;
+            &lt;h1 class=&#34;experience-h1&#34;&gt;
+              &lt;div class=&#34;decoration-line-two&#34;&gt;
+              &lt;/div&gt;
+              18
+            &lt;/h1&gt;
+            &lt;span class=&#34;experience-description-span&#34;&gt;Milionów przejechanych kilometrów w całej Europie.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;div class=&#34;col-md-8 experience-img zero&#34;&gt;
+          &lt;img src=&#34;../tires.jpg&#34; alt=&#34;&#34;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- &lt;div class=&#34;section&#34; id=&#34;our-offer&#34;&gt;
+      &lt;div class=&#34;container&#34;&gt;
+        &lt;h1 class=&#34;our-offer-h1 text-center&#34;&gt;Co oferujemy?&lt;/h1&gt;
+        &lt;div class=&#34;our-offer-description&#34;&gt;&#39;&#39;
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/div&gt; --&gt;
+
+    &lt;div class=&#34;section our-offer&#34; id=&#34;fleet&#34;&gt;
+      &lt;div class=&#34;square-right&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;full-w row section&#34; id=&#34;fleet-info&#34;&gt;
+        &lt;h1&gt;
+          &lt;div class=&#34;decoration-line-two&#34;&gt;
+          &lt;/div&gt;
+          Nasza oferta dla Ciebie.
+        &lt;/h1&gt;
+
+          &lt;div class=&#34;section_2&#34;&gt;
+            &lt;div class=&#34;row&#34;&gt;
+              &lt;div class=&#34;col-md-4 col-sm-12 offer-text&#34;&gt;
+                &lt;div class=&#34;logo-count&#34;&gt;
+                &lt;span class=&#34;number-count&#34;&gt;
+                  1
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+                &lt;h3&gt;Spedycja i planowanie.&lt;/h3&gt;
+                &lt;p&gt;Nasza kadra przygotuje dla Ciebie plan, zgodnie z którym zostanie przetransportowany Twój towar.
+                  &lt;div class=&#34;offer-text-img&#34;&gt;
+                  &lt;img class=&#34;col-md-10 offer-parallel-truck&#34; src=&#34;../mercedes_benz_truck.jpg&#34; alt=&#34;&#34;&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&#34;row&#34;&gt;
+              &lt;div class=&#34;col-md-4 offset-md-4 col-sm-12 offer-text&#34;&gt;
+                &lt;div class=&#34;logo-count&#34;&gt;
+                &lt;span class=&#34;number-count&#34;&gt;
+                  2
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+                &lt;h3&gt;Transport międzynarodowy.&lt;/h3&gt;
+                &lt;p&gt;Nasza flota wraz z kierowcami jest dla Ciebie dostępna przez 24/7,
+                365 dni w roku. Dojeżdzamy z załadunkiem do każdego miejsca w Europie, zawsze według życzeń klienta.
+                &lt;/p&gt;
+                &lt;div class=&#34;offer-text-img&#34;&gt;
+                  &lt;img class=&#34;col-md-10 &#34; src=&#34;../map.jpg&#34; alt=&#34;&#34; id=&#34;map-img&#34;&gt;
+                &lt;/div&gt;
+
+
+
+              &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&#34;row&#34;&gt;
+
+              &lt;div class=&#34;col-md-4 offset-md-8 col-sm-12 offer-text&#34;&gt;
+                &lt;div class=&#34;logo-count&#34;&gt;
+                &lt;span class=&#34;number-count&#34;&gt;
+                  3
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+                &lt;h3&gt;Monitoring GPS transportu.&lt;/h3&gt;
+                &lt;p&gt;Nasze flota jest wyposażona w lokalizatory GPS, a więc
+                  Twój ładunek jest zawsze kontrolowany i objęty ścisłym nadzorem.&lt;/p&gt;
+                &lt;div class=&#34;offer-text-img&#34;&gt;
+                  &lt;img class=&#34;col-md-10 offset-md-1 offer-parallel-truck&#34; src=&#34;../truck_parallel.jpg&#34; alt=&#34;&#34; id=&#34;offer-parallel-truck&#34;&gt;
+                &lt;/div&gt;
+
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;square-left&#34;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;video-row&#34;&gt;
+
+    &lt;div class=&#34;full-w-video&#34;&gt;
+      &lt;video src=&#34;../videos/freight_and_transportation.mp4&#34; autoplay loop&gt;
+
+      &lt;/video&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>O firmie</title>
+      <link>/kim-jestesmy/</link>
+      <pubDate>Sat, 08 Apr 2017 20:59:46 +0200</pubDate>
+      
+      <guid>/kim-jestesmy/</guid>
+      <description>&lt;div class=&#34;section&#34; id=&#34;history&#34;&gt;
+  &lt;img id=&#34;truck-sketch&#34; src=&#34;../szkic_ciezarowki.png&#34; alt=&#34;&#34;&gt;
+    &lt;div class=&#34;container&#34;&gt;
+      &lt;div class=&#34;row&#34;&gt;
+
+        &lt;div class=&#34;col-md-5 left&#34; id=&#34;history-sketch&#34;&gt;
+          &lt;img src=&#34;../headquarter.jpg&#34; alt=&#34;&#34;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&#34;col-md-6 right&#34; id=&#34;history-text&#34;&gt;
+          &lt;div class=&#34;decoration-line-one&#34;&gt;
+          &lt;/div&gt;
+          &lt;h1&gt;Historia&lt;/h1&gt;
+          Potrzeba wielu lat by osiągnąć perfekcję w swojej branży. &lt;br&gt; LoggerMTS działa na rynku usług transportowych
+          od ponad 18 lat. Firma została założona w 1999 roku w Raciborzu. Zaczynaliśmy od jednego samochodu typu &#34;bus&#34; jako &#39;Mały Transport Samochodowy&#34; - MTS.
+          Specjalizowaliśmy się głównie w dostawach pilnych ładunków na linie produkcyjne różnych firm  motoryzacyjnych z branży Automotive.
+          &lt;br&gt; Dzięki zdobywanemu doświadczeniu oraz popytowi na nasze usługi z roku na rok rozwijamy się i inwestujemy
+          w naszą flotę i markę.
+        &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;section js--wp-profile&#34; id=&#34;profile&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+    &lt;div class=&#34;col-md-6 zero&#34; id=&#34;profile-text&#34;&gt;
+      &lt;div class=&#34;decoration-line-one&#34;&gt;
+      &lt;/div&gt;
+      &lt;h1&gt;Dlaczego my?&lt;/h1&gt;
+        Dzięki szerokiemu wachlarzowi doświadczeń, nowoczesnej flocie oraz wykwalifikowanej kadrze jesteśmy
+        w stanie bezpiecznie przewieźć Twój towar w ustalonym wcześniej terminie. &lt;br&gt;
+        Specjalizujemy się w przewozach ładunków dla branży motoryzacyjnej, dysponujemy więc przystosowanymi do przewozu
+        tego typu ładunków naczepami.
+        Nasi kierowcy codziennie dowożą produkty naszych Klientów docierając z ich towarem do każdego zakątka Europy.
+
+    &lt;/div&gt;
+
+    &lt;div class=&#34;col-md-5 right&#34; id=&#34;office-img&#34;&gt;
+      &lt;img src=&#34;../dziecko_tir.jpg&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;section&#34; id=&#34;fleet&#34;&gt;
+  &lt;div class=&#34;full-w row&#34; id=&#34;fleet-img&#34;&gt;
+    &lt;div class=&#34;&#34; id=&#34;flota-img-mask&#34;&gt;
+    &lt;h1&gt;Flota&lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;full-w row section&#34; id=&#34;fleet-info&#34;&gt;
+    &lt;h1 class=&#34;text-center&#34;&gt;
+      &lt;div class=&#34;decoration-line-two&#34;&gt;
+      &lt;/div&gt;
+      Flota naszych samochodów.
+    &lt;/h1&gt;
+
+      &lt;div class=&#34;container section_2&#34;&gt;
+
+        &lt;div class=&#34;col-lg-4 col-md-12 offset-lg-1 fleet-text&#34;&gt;
+          &lt;h3&gt;Nowoczesne ciągniki.&lt;/h3&gt;
+          &lt;p&gt;Większość naszych samochodów to ciągniki DAF oraz Mercedes serwisowane w autoryzowanych serwisach,
+             dzięki czemu masz pewność, że Twój ładunek dotrze do celu bezawaryjnie, na czas.&lt;/p&gt;
+          &lt;img src=&#34;../fleet-mercedes.png&#34; alt=&#34;&#34;&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&#34;col-lg-4 col-md-12 offset-lg-1 fleet-text&#34;&gt;
+          &lt;h3&gt;Przystosowane naczepy.&lt;/h3&gt;
+          &lt;p&gt;W swojej flocie dysponujemy zestawami naczep typu MEGA.
+
+          &lt;/p&gt;
+          &lt;img src=&#34;../naczepa.png&#34; alt=&#34;&#34;&gt;
+        &lt;/div&gt;
+
+        &lt;!-- &lt;div class=&#34;col-lg-3 col-md-12 offset-lg-1 fleet-text&#34;&gt;
+          &lt;h3&gt;Co jeszcze dodać o flocie?&lt;/h3&gt;
+          &lt;p&gt;Tutaj można jeszcze coś dodać o flocie, jakieś pomysły?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &lt;/p&gt;
+          &lt;img src=&#34;../logo-img.png&#34; alt=&#34;&#34;&gt;
+        &lt;/div&gt; --&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class=&#34;video-row&#34;&gt;
+    &lt;div class=&#34;full-w-video&#34;&gt;
+      &lt;video src=&#34;../videos/transport_miedzynarodowy.mp4&#34; autoplay loop &gt;
+
+      &lt;/video&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

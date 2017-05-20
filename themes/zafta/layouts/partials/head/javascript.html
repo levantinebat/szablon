@@ -1,0 +1,9 @@
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+{{ $contact := "contact" }}
+{{ if eq .Params.body_id $contact}}
+<script src="../js/maplace.min.js"></script>
+{{ end }}
+{{ "<!-- Media JS -->" | safeHTML }}
+<script src= "{{ if eq .Site.Title .Title}}./js/media.min.js{{else}}../js/media.min.js{{ end }}"></script>

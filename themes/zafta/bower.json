@@ -1,0 +1,20 @@
+{
+  "name": "gulp-starter",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Denis Kostrzewa <denis@dkcomm.dk>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}

@@ -1,0 +1,138 @@
+// ------
+// fleet
+// ------
+#kim-jestesmy{
+}
+  #fleet{
+    padding-top: 0;
+    background: $color1;
+  }
+  #fleet-img{
+    position: relative;
+    height: 750px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/logger_header.jpg);
+    text-align: center;
+
+    h1{
+      margin-top: 40px;
+      font-size: 4em;
+
+      padding-top: 30px;
+      letter-spacing: 7px;
+      display: inline-block;
+      color: $grey-light;
+    }
+    #fleet-img-mask{
+      width: 100%;
+      height: 100%;
+      @include BgBlur1(black,0.25);
+    }
+  }
+  #fleet-info{
+    background: inherit;
+    text-align: center;
+    h1{
+      display: inline-block;
+    }
+    .col-md-4{
+      width: 30%;
+    }
+
+  }
+  .fleet-text{
+    height: 600px;
+    margin-top: 15px;
+
+    img{
+      position: absolute;
+      left: 0;
+      margin-top: 50px;
+      bottom: 0;
+    }
+
+  }
+#kim-jestesmy{
+  color: $white;
+  background: $black;
+  .video-row{
+    margin-bottom: 0;
+      video{
+        background-image: url(../posterimage.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateY(-385px);
+        @media only screen and (max-width:1200px){
+          transform: translateY(-285px);
+        }
+      }
+    }
+    #history-sketch{
+    z-index: -1;
+    max-height: 400px;
+    margin-top: 75px;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+      img{
+        position: absolute;
+        width: 100%;
+        opacity: 0.95;
+      }
+    }
+  #history{
+    position: relative;
+    margin-top: 50px;
+    #truck-sketch{
+      top: 0;
+      position: fixed;
+      opacity: 0.035;
+      width: 100%;
+    }
+  }
+  #history-text{
+    margin-right: 0;
+    font-weight: 300;
+    position: relative;
+    h1{
+      text-transform: uppercase;
+    }
+  }
+
+
+  #profile{
+    color: $black;
+    background: $grey-dark;
+  }
+
+  #office-img{
+    // height: 300px;
+    // background-position: center;
+    // background-image: url(img/kid.jpg);
+    // background-size: 80%;
+    margin-top: 10px;
+    img{
+      height: 440px;
+      border-radius: 5px;
+      @include transition-all(0.5s);
+
+      &:hover{
+        transform: scale(1.3);
+        @include transition-all(0.5s);
+      }
+    }
+  }
+
+  #profile-text, #office-img, #history-sketch, #history-text{
+    opacity: 0;
+    @media only screen and (max-width:992px){
+      opacity: 1;
+    }
+  }
+
+
+
+
+}

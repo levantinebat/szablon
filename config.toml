@@ -1,0 +1,12 @@
+languageCode = "pl-PL"
+title = "LoggerMTS transport międzynarodowy"
+baseURL = "/"
+theme= "zafta"
+ignoreFiles = [".scss"]
+canonifyURL = false
+
+[params]
+description ="Najpewniejszy międzynarodowy transport ładunków lądowych, fracht i spedycja tylko z LoggerMTS z siedzibą w Raciborzu"
+author="DK Commerce & Dealings"
+company_name = "LoggerMTS"
+home= "tak"

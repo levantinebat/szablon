@@ -1,0 +1,326 @@
+#index{
+  background: lighten($black,5%);
+  min-width: 100%;
+  $hero-height:700px;
+  #hero-header{
+    margin-top: 88px;
+    overflow: hidden;
+    font-family: $font-family-second;
+    height: $hero-height;
+    color: $white;
+    padding-top: 0;
+    position: relative;
+
+  }
+
+  @mixin hero-left-bg {
+    background: $black;
+
+  }
+  $container-width:450px;
+  #hero-text-container{
+    font-size: 1.04em;
+    margin-top: -10px;
+    float: right;
+    right: 0;
+    position: absolute;
+    height: $hero-height;
+    width:   $container-width;
+    z-index: -1;
+    @include hero-left-bg;
+
+  }
+  #hero-text-skew{
+    height: $hero-height;
+    transform: skew(22.5deg);
+    padding-left: 90px;
+    right: 110px;
+    position: absolute;
+    width:   $container-width;
+
+    @include hero-left-bg;
+
+    }
+  #hero-text{
+    margin-top: 40px;
+    text-transform: uppercase;
+    transform: skew(-22.5deg);
+    font-weight: 800;
+    font-size: 0.95em;
+
+    $copy-right-pos:13px;
+    span{
+      color: $white;
+      &:nth-last-child(2){
+        margin-top:0;
+        right: $copy-right-pos;
+        font-size: 3.5em;
+        margin-bottom: 0;
+        letter-spacing: 11px;
+      }
+    }
+    .copy-text{
+      display: block;
+      width: 100%;
+      position: relative;
+      margin-top: 0;
+      margin-bottom: -10px;
+
+      &:nth-last-child(3){
+        margin-top: 15px;
+        right: $copy-right-pos;
+        font-size: 3em;
+        letter-spacing: 8px;
+      }
+      &:nth-last-child(1){
+        color: lighten($color1,10%);
+        margin-top: -20px;
+        right: $copy-right-pos + 10px;
+        font-size:3.8em;
+        letter-spacing: 11px;
+        @media only screen and (max-width:992px){
+          right: $copy-right-pos;
+        }
+      }
+    }
+
+      .inline-block{
+        margin-top: 250px;
+      }
+    }
+  // #hero-text-mask{
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   margin-left: -20px;
+  //   @include BgBlur2(0.2);
+  // }
+  #hero-btn{
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 385px;
+    color: $grey-light;
+    right: 270px;
+    background: $color1;
+    width: 200px;
+    z-index: 1000;
+    padding: 10px;
+    border: none;
+    @include transition-all(0.4s);
+
+
+    &:hover{
+      color: $color1;
+      background: $grey-light;
+      letter-spacing: 4px;
+      border: none;
+      @include transition-all(0.4s);
+    }
+  }
+// ----------
+// right side end
+// ----------
+  #hero-vid-container{
+    margin-top: -10px;
+    height: $hero-height;
+    z-index: -2;
+    background-size: cover;
+    background-position: center 60%;
+    background-image: url(img/logger_header.jpg);
+  }
+  #hero-vid-mask{
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    @include BgBlur2(0.25);
+  }
+  // ----------
+  // hero end
+  // ----------
+
+  #features{
+    width: 100%;
+    background: $white;
+    color: $white !important;
+    $about-features-height: 350px;
+    $about-features-images-padding:30px;
+    .full-w.row{
+      margin: 0;
+      background: lighten($black,5%);
+    }
+    p{
+      font-size: 0.85em;
+    }
+    #about-features{
+      padding: 0;
+      overflow: hidden;
+    }
+    #about-us-features{
+      height: $about-features-height;
+      background-image: url(img/spedycja.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #collaboration-features{
+      height: $about-features-height;
+      width: 100%;
+      margin:0;
+      // background-image: url(img/logger_header.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 0;
+      .video-container{
+
+        filter: brightness(120%);
+      }
+      video{
+        transform: translateY(-550px);
+        left: -50%;
+        position: relative;
+        opacity: 0.7;
+      }
+    }
+    #about-us-features, #collaboration-features, #offer-features{
+      margin-bottom:50px;
+    }
+    .about-mask{
+      letter-spacing: 2px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .about-text{
+      margin-left: 30px;
+      height: 100%;
+    }
+    .about-header{
+      top: 50px;
+      position: relative;
+      margin: 0;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    .about-paragraph{
+      top: 70px;
+      position: relative;
+      margin: 0;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    #offer-features{
+      background: $color1;
+      color: $white;
+      width: 46%;
+      margin-left: 20px;
+      padding: 0;
+      float: right;
+      height: ($about-features-height *1.5) +50px;
+      background-image: url(img/oferta_przewozowa.png);
+      transform: scaleX(-1);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position:center;
+      h1,p,a{
+        transform: scaleX(-1);
+        margin-right: 20px;
+      }
+      a{
+        color: $color1 ;
+        float: right;
+      }
+    }
+    #offer-features-mask{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+
+    }
+    .offer-header,.offer-header2, .offer-paragraph{
+      text-transform: uppercase;
+
+    }
+    $offer-paragraph-font-size:0.85em;
+    .offer-header{
+      font-size: $offer-paragraph-font-size *3.5;
+      top: 35px;
+      position: relative;
+      margin: 0;
+      margin-right: 20px;
+      margin-left: 20px;
+      text-align: left;
+    }
+    .offer-paragraph{
+      font-size: $offer-paragraph-font-size;
+      top: 55px;
+      position: relative;
+      margin: 0;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: -10px;
+      text-align: left;
+    }
+
+    #s-features-row{
+
+    }
+    $contact-features-height: 400px;
+    #contact-us-features{
+      width: 46%;
+      margin-left: 20px;
+      height: $about-features-height *1.5;
+      font-size: 0.9em;
+      margin:0;
+      background-image: url(img/skontaktuj_sie.jpg);
+      background-size: cover;
+      background-position: center;
+      float: right;
+      padding: 0;
+      h1, p{
+        color: $grey-light;
+      }
+      a{
+        color: $color1;
+      }
+      .about-mask{
+        &:hover{
+          @include transition-all(0.5s);
+          background: transparent;
+        }
+      }
+    }
+    #btn-aplikacja{
+      cursor:pointer;
+
+    }
+    #apply-features{
+      height: $about-features-height;
+      margin:0;
+      background-image: url(img/srodek_samochodu.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 0;
+    }
+
+  }
+
+// animate.css options
+
+#features{
+  opacity: 0;
+  @media only screen and (max-width:992px){
+    opacity: 1;
+  }
+}
+#copy-last{
+  animation-duration: 0.5s;
+}
+#hero-btn{
+  animation-duration: 1s;
+}
+}

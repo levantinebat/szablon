@@ -1,0 +1,10 @@
+  {{ partial "header.html" . }}
+  {{ partial "navbar.html" . }}
+  <div class="page">
+
+
+  {{ with .Content }} {{ . }} {{ end }}
+
+
+  {{ partial "call-ta.html" . }}
+  {{ partial "footer.html" . }}

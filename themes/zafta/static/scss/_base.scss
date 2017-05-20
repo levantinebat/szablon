@@ -1,0 +1,174 @@
+// ***********************************
+// BASE
+// ***********************************
+
+#kim-jestesmy, #offer{
+	.page{
+		margin:0;
+		padding:0;
+	}
+}
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $color1;
+  outline: 1px solid slategrey;
+}
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+body{
+	color: $body-text;
+	margin: 0;
+	padding: 0;
+	background: $color2;
+	line-height: $line-height-mobile;
+	font-family: $font-family-primary;
+	font-weight: $font-weight-body;
+
+	@include breakpoint($break-menu){
+		font-size: $font-size;
+		line-height: $line-height;
+	}
+}
+.full-w{
+	width:100%;
+	margin:0 !important;
+	background-color: $grey-dark;
+}
+.container{
+	max-width: 1024px;
+	margin:0 auto;
+}
+.decoration-line-one{
+	height: 3px;
+  background: $color1;
+  width: 17%;
+	margin-bottom: 15px;
+}
+.decoration-line-two{
+	height: 3px;
+  background: $color2;
+  width: 17%;
+	margin-bottom: 15px;
+}
+.section{padding: 120px 0; margin:0 auto;}
+.question-row{
+	padding-top: 15px;
+  padding-bottom: 35px;
+	height: auto;
+	line-height: 20px;
+	position: relative;
+	background: $black;
+	color: $white;
+	.question-row-mask{
+		position: absolute;
+		height: 75%;
+		width: 100%;
+		background: url(img/logo-img.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		filter: brightness(247%);
+		opacity: 0.04;
+	}
+	.container{
+		position: relative;
+	}
+	h2{
+		font-size: 2em;
+		line-height: 1.4em;
+	}
+	a{
+		margin-top: 10px;
+		// width: 100px !important;
+		// padding: 10px;
+		// position: absolute;
+		left: initial;
+		top: initial;
+		bottom: 5px;
+	}
+}
+
+.square-left{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 96px 96px 0 0;
+	border-color: #7e7f82 transparent transparent transparent;
+}
+.square-right{
+	position: absolute;
+	width: 0;
+	height: 0;
+	right:0;
+	border-style: solid;
+	border-width:  0 96px 96px 0;
+	border-color: transparent #7e7f82 transparent transparent;
+}
+.text-left{
+	text-align: left;
+}
+h1{
+	text-transform: uppercase;
+}
+
+// ***********************************
+// PAGE STRUCTURE
+// ***********************************
+
+//Susy Maps
+$susy: (
+	columns: 12,
+	gutters: 1/2,
+	math: fluid,
+	gutter-position: inside,
+);
+
+#header, #content, .page{
+	overflow: hidden;  // clearfix
+}
+.page{
+	padding:  0;
+	margin-bottom: 100px;
+} // page
+
+
+#header{
+	background: $grey-light;
+
+	#header-wrapper{
+		@include span(12);
+	}
+} // #header
+
+#content{
+	#primary{
+		@include span(12);
+		@include breakpoint($break-menu) {
+		    @include span(8);
+		 }
+	}
+
+	#aside{
+		@include span(12);
+		@include breakpoint($break-menu) {
+		    @include span(4);
+		 }
+	}
+} // content
